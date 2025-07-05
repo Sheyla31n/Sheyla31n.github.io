@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0d1124;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px; 
+  width: 100%;
+  padding: 16px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.c-brand {
+  display: flex;
+  justify-content: space-between; /* Left ke kiri, right ke kanan */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #edeced;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.brand-left {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family:'Gill Sans';
+}
+
+.brand-right {
+  display: flex;
+  gap: 40px; /* Jarak antar menu kanan */
+  color: white;
+}
+
+
+.brand-fixed {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-family:'Gill Sans';
+}
+
+.brand-fixed:hover {
+  opacity: 0.8;
+}
+
+/* Supaya konten tidak ketutup header */
+main {
+  margin-top: 70px; /* Sesuaikan dengan tinggi header */
+  margin-bottom: 120px;
+  padding: 0;
+}
+
+.brand-fixed.active {
+  color: #30385c;
+  font-weight: bold;
+}
+
+.page-section {
+  min-height: 100vh;
+  padding: 200px 2rem 2rem;
+  scroll-margin-top: 50px; /* Agar scroll tidak ketutup header */
+}
+
+#about {
+  background:  #edeced ;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: top;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  scroll-margin-top: 80px;
+  text-align: center;
+}
+
+#project {
+  padding-top:40px;
+  scroll-margin-top: 80px;
+  background: linear-gradient(180deg, #edeced 0%, #d1c0ca 30%);
+  min-height: auto;
+  padding: 120px 2rem 2rem;
+  scroll-margin-top: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#contact {
+  background: linear-gradient(180deg, #d1c0ca 0%, #E0E0E0 70%);
+  min-height: 60vh;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Biar nempel atas */
+  align-items: center;          /* Biar teks center secara horizontal */
+  padding-top: 40px;            /* Jarak dari atas */
+  text-align: center;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: -3.5rem;
+}
+
+.product-card {
+  background: #2a2a2a;
+  border-radius: 15px;
+  margin-top:20px;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  transition: transform 0.3s;
+  width: 100%;           /* Responsive */
+  margin: 0 auto;        /* Tengahin */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-section img {
+  margin: 1rem auto;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Agar tetap responsif di layar kecil */
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+.icon-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.icon-item a {
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+  word-break: break-word;
+  text-align: center;
+}
